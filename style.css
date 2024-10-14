@@ -1,0 +1,131 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(black,rgba(0, 0, 255, 0.664),grey); /* Darker background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+h1{
+    justify-content: center;
+    align-items: center ;
+}
+.calculator {
+    background:linear-gradient(grey,rgba(0, 0, 255, 0.664),black); /* Dark grey with a hint of purple */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 15px 20px rgb(0, 0, 0); /* Softer shadow */
+    width: 260px;
+}
+
+#display {
+    background-color: #252836; /* Darker grey for contrast */
+    color: #ffffff; /* Bright white text */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    margin-bottom: 15px;
+    margin-left: -15px;
+    width: 100%;
+    border: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: #2a2d3e; /* Dark but softer tone for buttons */
+    border: none;
+    border-radius: 10px;
+    color: #ffffff; /* White text for readability */
+    padding: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #373b52; /* Slightly brighter hover state */
+}
+
+button:active {
+    background-color: #4a4f68; /* Deeper color when pressed */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Press effect */
+}
+
+/* Special buttons */
+button:nth-child(1) {
+    background-color: #dd17178a;
+}
+
+button:nth-child(2) {
+    background-color: #f39c12;
+}
+
+button:nth-child(3) {
+    background-color: #8e44ad;
+}
+
+button:nth-child(4) {
+    background-color: #3498db;
+}
+
+button:nth-child(20) {
+    background-color: #27ae60;
+}
+
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16) {
+    background-color: #3498db;
+}
