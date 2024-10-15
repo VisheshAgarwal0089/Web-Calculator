@@ -45,7 +45,7 @@ function calculateResult() {
 }
 
 function calculate(expression) {
-    const numbers = expression.split(/[\+\-\*\/\%]/).map(Number);
+    const numbers = expression.split(/[\+\-\*\/]/).map(Number);
     const operators = expression.split(/[0-9.]+/).filter(op => op !== "");
 
     let result = numbers[0];
@@ -57,12 +57,13 @@ function calculate(expression) {
         if (operator === '+') result += number;
         else if (operator === '-') result -= number;
         else if (operator === '*') result *= number;
-        else if(value === '.' && currentText.split(/[\+\-\*\/]/).pop().includes('.')) {
-            return;
-        }
+        
         else if (operator === '/') {
             if (number === 0) throw new Error('Division by zero');
             result /= number;
+        }
+        else if(value === '.' && currentText.split(/[\+\-\*\/]/).pop().includes('.')) {
+            return;
         }
     }
     return result;
