@@ -11,6 +11,7 @@ This is a simple calculator application built with HTML, CSS, and JavaScript. Th
 - **User-friendly Interface**: Interactive buttons for digits and operations enhance user experience.
 - **Clear Functionality**: Reset the calculator easily with a dedicated clear button.
 - **Delete Functionality**: Result the calculator easily with a dedicated delete button.
+- **No operation works before entering the numbers in the starting.
 
 ## Technologies Used
 
