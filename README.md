@@ -25,3 +25,6 @@ To run this project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/visheshagarwal0089/calculator.git
+2. Video Recording of Functioning of Calculator:
+   ```bash
+   git video https://github.com/VisheshAgarwal0089/Web-Calculator/blob/8a9d57457ef2e8a5978a7a36ea58c0a7c5900734/html-css-js-calculator-demo.mp4
